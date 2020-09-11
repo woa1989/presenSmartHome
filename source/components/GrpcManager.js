@@ -22,10 +22,7 @@ export default class GrpcManager {
       this.onFailed = props.onFailed
     }
 
-    var host = AppConfig.gcs_grpc_host
-    var port = AppConfig.gcs_grpc_port
-
-    this.host = host + ":" + port
+    this.host = AppConfig.gcs_grpc
     this.retry_counter = 0
     this.toast = null
     this.time_out = null
